@@ -7,5 +7,13 @@ Replication materials for the paper "Comparing automated content analysis method
 - `flemish_parliamentarians` List of Flemish parliamentarians (2017) from which tweets were collected
 - `20140718_dutchdictionary_v2.lcd` Dutch CAP dictionary, compiled by [Sevenans et al. (2014).](https://www.researchgate.net/publication/263732999_The_Automated_Coding_of_Policy_Agendas_A_Dictionary_Based_Approach)
 - `tweet_ids` Tweet IDs from the political tweets used in this study. In line with the Twitter policy we only store tweet IDs, but the tweets can be hydrated using readily available tools such as [Hydrator](https://github.com/DocNow/hydrator).
-
+- `json_to_excel.py` Load json file with hydrated tweets line by line and store tweet_id, screen_name, text, created_at, hashtags, mentions, and retweeted_user in excel file. You can merge this file with `tweet_ids` (to add political party per tweet) and use for analysis. 
 ## Analysis
+- `01-preprocessing.py` Preprocessing of the text of the tweets (see section 3.2 in paper). This includes:
+(1) replace named entities, mentions, numbers, and urls
+(2) remove punctuation and stopwords (Dutch, French, and English)
+(3) normalize (reduce to word lemma)
+- `02-expert_issues.py` Discriminative power and the most discriminative issues per political party when applying the models based on expert issues (Table 6 and Table 7 of the paper) 
+- `03-BoW.py` Discriminative power and the most discriminative words per political party when applying the models based on Bag of Words (Table 6 and Table 7 of the paper) 
+- `04-topic_models.py` Discriminative power and the most discriminative topics per political party when applying the models based on topic modeling (Table 6 and Table 7 of the paper)
+
