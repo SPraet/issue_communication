@@ -9,7 +9,7 @@ when applying the models based on Bag of Words (Table C1 and Table 7)
 """
 Define file paths
 """
-tweets_path = 'PATH_TO_TWEETS' # path to excel file with tweets 
+tweets_path = 'tweets_cleaned.xlsx' # path to excel file with preprocessed tweets 
 
 
 #%%
