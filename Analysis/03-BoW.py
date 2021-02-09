@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Discriminative power and the most discriminative words per political party 
-when applying the models based on Bag of Words (Table 6 and Table 7)
+when applying the models based on Bag of Words (Table C1 and Table 7)
 
 @author: SPraet
 """
@@ -112,7 +112,7 @@ AUC_bow.loc[7] = ['All (wavg)',wavg,np.sum(AUC_bow["counts"])]
 
 #%%
 """
-Most discriminative words (unigrams) per political party (cfr paper Table 6)
+Most discriminative words (unigrams) per political party (cfr paper Table C1)
 """
 top_words=[]
 for partyname in partynames:
