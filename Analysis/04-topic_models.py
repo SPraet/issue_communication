@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Discriminative power and the most discriminative words per political party 
-when applying the models based topic modeling (NMF) (Table 6 and Table 7)
+when applying the models based topic modeling (NMF) (Table C2 and Table 7)
 
 
 @author: SPraet
@@ -142,7 +142,7 @@ AUC_topic_model.loc[7] = ['All (wavg)',wavg,np.sum(AUC_topic_model["counts"])]
 
 #%%
 """
-Most discriminative NMF topics per political party (cfr paper Table 6)
+Most discriminative NMF topics per political party (cfr paper Table C2)
 """
 top_topics=[]
 for partyname in partynames:
