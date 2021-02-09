@@ -21,6 +21,6 @@ Fig. 1: Schematic representation of the methods we propose in this paper
 (2) remove punctuation and stopwords (Dutch, French, and English)
 (3) normalize (reduce to word lemma)
 - `02-expert_issues.py` Discriminative power and the most discriminative issues per political party when applying the models based on expert issues (Table 6 and Table 7 of the paper) 
-- `03-BoW.py` Discriminative power and the most discriminative words per political party when applying the models based on Bag of Words (Table 7 and C1 of the paper) 
-- `04-topic_models.py` Discriminative power and the most discriminative topics per political party when applying the models based on topic modeling (Table 7 and C2 of the paper)
+- `03-BoW.py` Discriminative power and the most discriminative words per political party when applying the models based on Bag of Words (Table 7 and Table C1 of the paper) 
+- `04-topic_models.py` Discriminative power and the most discriminative topics per political party when applying the models based on topic modeling (Table 7 and Table C2 of the paper)
 
